@@ -112,6 +112,7 @@ console.log('Практика с массивами');
 import any from './array-practice/task1.js';
 import arrayDiff from './array-practice/task2.js';
 import forEachRight from './array-practice/task3.js';
+import union from './array-practice/task4.js';
 
 console.log('=============');
 
@@ -127,5 +128,10 @@ console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4']));
 console.log('=============');
 
 forEachRight([1, 2, 3, 4], val => console.log(val));
+
+console.log('=============');
+
+console.log(union([5, 1, 2, 3, 3], [4, 3, 2]));
+console.log(union([5, 1, 3, 3, 4], [1, 3, 4]));
 
 console.log('=============');
