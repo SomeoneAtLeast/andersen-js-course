@@ -15,3 +15,19 @@
  * console.log(arrayDiff([1, 2, 3], [1, 2, 4])); -> [3, 4]
  * console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4'])); -> [4, '4']
  */
+
+const arrayDiff = (arr1, arr2) => {
+  const newArr = [];
+
+  arr1.forEach(arr1Item => {
+    if (!arr2.some(arr2Item => arr2Item === arr1Item)) newArr.push(arr1Item);
+  });
+
+  arr2.forEach(arr2Item => {
+    if (!arr1.some(arr1Item => arr1Item === arr2Item)) newArr.push(arr2Item);
+  });
+
+  return newArr;
+};
+
+export default arrayDiff;
