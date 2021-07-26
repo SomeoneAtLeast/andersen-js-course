@@ -107,22 +107,25 @@
 
 // console.log('=============');
 
-
-
 console.log('Практика с массивами');
 
 import any from './array-practice/task1.js';
 import arrayDiff from './array-practice/task2.js';
+import forEachRight from './array-practice/task3.js';
 
 console.log('=============');
 
 console.log(any([0, 1, 2, 0], x => x >= 2));
-console.log(any([0, 0, 1, 0])); 
+console.log(any([0, 0, 1, 0]));
 console.log(any([0, 0, 0, 0]));
 
 console.log('=============');
 
 console.log(arrayDiff([1, 2, 3], [1, 2, 4]));
 console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4']));
+
+console.log('=============');
+
+forEachRight([1, 2, 3, 4], val => console.log(val));
 
 console.log('=============');
