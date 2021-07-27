@@ -109,11 +109,12 @@
 
 console.log('Практика с массивами');
 
-import any from './array-practice/task1.js';
-import arrayDiff from './array-practice/task2.js';
-import forEachRight from './array-practice/task3.js';
-import union from './array-practice/task4.js';
-import createGenerator from './array-practice/task5.js';
+import any from './array-practice/task1';
+import arrayDiff from './array-practice/task2';
+import forEachRight from './array-practice/task3';
+import union from './array-practice/task4';
+import createGenerator from './array-practice/task5';
+import transformArrayToNumber from './array-practice/task6';
 
 console.log('=============');
 
@@ -144,5 +145,13 @@ console.log(generator.next());
 console.log(generator.next());
 console.log(generator.next());
 console.log(generator.next());
+
+console.log('=============');
+
+console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc + item));
+console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc + item, 10));
+console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc * item));
+console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc * item, 1));
+console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc - item));
 
 console.log('=============');
