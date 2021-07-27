@@ -115,6 +115,7 @@ import forEachRight from './array-practice/task3';
 import union from './array-practice/task4';
 import createGenerator from './array-practice/task5';
 import transformArrayToNumber from './array-practice/task6';
+import take from './array-practice/task7';
 
 console.log('=============');
 
@@ -153,5 +154,10 @@ console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc + item, 10))
 console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc * item));
 console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc * item, 1));
 console.log(transformArrayToNumber([10, 20, 30], (acc, item) => acc - item));
+
+console.log('=============');
+
+console.log(take([1, 2, 3], 5));
+console.log(take([1, 2, 3], 2)); 
 
 console.log('=============');
