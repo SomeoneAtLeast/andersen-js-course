@@ -20,10 +20,8 @@ const createGenerator = arr => {
   let i = 0;
   return {
     next() {
-      if (i < arr.length) {
-        console.log(arr[i]);
-        i += 1;
-      } else console.log('Complete!');
+      if (i < arr.length) return arr[i++];
+      return 'Complete!';
     },
   };
 };
