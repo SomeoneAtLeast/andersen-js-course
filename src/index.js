@@ -113,6 +113,7 @@ import any from './array-practice/task1.js';
 import arrayDiff from './array-practice/task2.js';
 import forEachRight from './array-practice/task3.js';
 import union from './array-practice/task4.js';
+import createGenerator from './array-practice/task5.js';
 
 console.log('=============');
 
@@ -133,5 +134,15 @@ console.log('=============');
 
 console.log(union([5, 1, 2, 3, 3], [4, 3, 2]));
 console.log(union([5, 1, 3, 3, 4], [1, 3, 4]));
+
+console.log('=============');
+
+const generator = createGenerator([1, '6', 3, 2]);
+generator.next();
+generator.next();
+generator.next();
+generator.next();
+generator.next();
+generator.next();
 
 console.log('=============');
