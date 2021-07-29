@@ -99,4 +99,4 @@ export const task10New = () => {
   b.color = 'red';
   console.log(b.color); // red
   return b;
-}
+};
