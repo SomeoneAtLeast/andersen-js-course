@@ -1,13 +1,13 @@
 const foo = (x, cb) => {
-    if (x > 10) {
-        console.log('x > 10');
-        cb();
-    };
+  if (x > 10) {
+    console.log('x > 10');
+    cb();
+  }
 
-    if (x <= 10) console.log('x <= 10');
+  if (x <= 10) console.log('x <= 10');
 };
 
-const createCb = (str) => () => console.log(str);
+const createCb = str => () => console.log(str);
 
 foo(5, createCb('cb'));
 foo(20, createCb('cb'));
