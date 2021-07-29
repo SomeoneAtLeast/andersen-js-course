@@ -1,5 +1,3 @@
-import './styles/main.css';
-
 const getResolvedPromise = value => {
   return Promise.resolve(value)
     .then(result => {
