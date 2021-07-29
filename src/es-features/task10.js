@@ -91,7 +91,7 @@ class NewB extends NewA {
   }
 }
 
-export function task10New() {
+export const task10New = () => {
   var b = new NewB('Max', 12);
   console.log(b.getName('Best')); // Max Best
   console.log(b.getAge()); // 12
