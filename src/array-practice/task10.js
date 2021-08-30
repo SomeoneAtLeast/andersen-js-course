@@ -18,3 +18,12 @@
 // ];
 
 // function membersOnActiveMeetups(meetups) {}
+
+const membersOnActiveMeetups = meetups => {
+  return meetups.reduce((result, meetup) => {
+    if (meetup.isActive) result += meetup.members;
+    return result;
+  }, 0);
+};
+
+export default membersOnActiveMeetups;

@@ -14,3 +14,11 @@
  * console.log(any([0, 0, 1, 0])); -> true
  * console.log(any([0, 0, 0, 0])); -> false
  */
+
+const any = (arr, callback) => {
+  if (callback) return arr.some(callback);
+
+  return arr.some(item => !!item);
+};
+
+export default any;
